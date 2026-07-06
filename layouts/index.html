@@ -1,0 +1,15 @@
+{{ define "main" }}
+<h2>文章列表</h2>
+<ul class="post-list">
+  {{ range .Pages }}
+    <li>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <div class="meta">
+        {{ .Date.Format "2006-01-02" }} | 
+        {{ range .Params.tags }}#{{ . }} {{ end }}
+      </div>
+      <p>{{ .Summary }}</p>
+    </li>
+  {{ end }}
+</ul>
+{{ end }}
