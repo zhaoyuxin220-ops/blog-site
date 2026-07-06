@@ -1,0 +1,16 @@
+baseURL = 'https://zhaoyuxin220-ops.github.io/博客/'
+languageCode = 'zh-cn'
+title = '我的博客'
+theme = ''
+defaultContentLanguage = 'zh-cn'
+
+[params]
+  author = 'zhaoyuxin220-ops'
+  description = 'My Hugo Blog on GitHub Pages'
+
+[permalinks]
+  posts = '/posts/:slug/'
+
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
